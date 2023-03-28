@@ -25,11 +25,44 @@ function updateProfileInfo(profileData) {
 function updateSoftSkills(profileData) {
     const softSkills = document.getElementById('profile.skills.softSkills')
 
-    softSkills.innerhtml = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
+    softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
+}
+
+function updateLanguages(profileData) {
+    const languagues = document.getElementById('profile.languages')
+    languagues.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('')
+}
+
+function updatePortfolio(profileData) {
+    const portfolio = document.getElementById('profile.portfolio')
+    portfolio.innerHTML = profileData.portfolio.map(project => {
+        return `
+            <li>
+                <h3 ${project.github ? 'class="github"' : ''}>${project.name}</h3>
+                <a href="${project.url}" target="_blank">${project.url}</a>
+            </li>
+        `
+    }).join('')
+}
+
+function updateProfessionalExperience(profileData) {
+    const professionalExperience = document.getElementById('profile.professionalExperience')
+    professionalExperience.innerHTML = profileData.professionalExperience.map(experience => {
+        return `
+            <li>
+                <h3 class="title">${experience.name}</h3>
+                <p class="period">${experience.period}</p>
+                <p>${experience.description}</p>
+            </li>
+        `
+    }).join('')
 }
 
 (async () => {
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
-    updateSkills(profileData)
+    updateSoftSkills(profileData)
+    updateLanguages(profileData)
+    updatePortfolio(profileData)
+    updateProfessionalExperience(profileData)
 })()
