@@ -1,7 +1,7 @@
 {
   "name": "Marcelo Muniz",
   "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
-  "student": "Realizando o curso Desenvolvimento de sistemas pela ETEC",
+  "student": "Realizando o curso Desenvolvimento de Sistemas pela ETEC",
   "location": "Itanhaém - SP",
   "phone": "(13) 99131-1667",
   "email": "marcelogmuniz@outlook.com",
@@ -52,7 +52,6 @@
   "professionalExperience": [
     {
       "name": "Sem experiência",
-      "period": "",
       "description": "No momento estou a procura da primeira oportunidade de emprego."
     }
   ]
