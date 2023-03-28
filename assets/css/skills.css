@@ -1,6 +1,7 @@
 .skills {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .skills .tools ul {
@@ -16,28 +17,27 @@
 
 .skills .tools ul li img {
     max-width: 50px;
-    max-height: 50px;
     margin: 0 .5rem;
 }
 
 .skills .personal ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .skills .personal ul li {
-    margin-left: 2rem;
-    padding: .5rem
+    margin-left: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

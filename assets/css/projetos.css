@@ -1,0 +1,48 @@
+.projetos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.projetos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 0rem 1.2rem 1rem;
+}
+
+.name-projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.name-projetos.github::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/icons/github.svg');
+    margin-right: .5rem;
+}
+
+.projetos li a{
+    font-weight: 500;
+    color: #540D6E;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.projetos li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

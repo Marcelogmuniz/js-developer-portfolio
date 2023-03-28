@@ -1,0 +1,17 @@
+.experiencia {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.experiencia li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 0rem 1.2rem 1rem;
+    text-decoration: none;
+}
