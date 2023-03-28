@@ -21,7 +21,7 @@
     padding: 1rem 2rem;
     background-color: transparent;
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #fff ;
 }
@@ -37,7 +37,7 @@
     height: 1.5rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/icons/arrow.svg');
+    background-image: url('/js-developer-portfolio/assets/icons/arrow.svg');
     transition: .25s;
 }
 
@@ -57,10 +57,4 @@
     padding: 0rem 1rem 1rem 1rem;
     opacity: 1;
     height: auto;
-}
-
-@media only screen and (min-width: 768px) {
-    .acordeon .trigger {
-        font-size: 1.5rem;
-    }
 }

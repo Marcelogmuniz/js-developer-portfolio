@@ -60,22 +60,22 @@ header {
 }
 
 .info .student::before {
-    background-image: url('/assets/icons/student.svg');
+    background-image: url('/js-developer-portfolio/assets/icons/student.svg');
     fill: #fff;
 }
 
 .info .local::before {
-    background-image: url('/assets/icons/location.svg');
+    background-image: url('/js-developer-portfolio/assets/icons/location.svg');
     fill: #fff;
 }
 
 .info .phone::before {
-    background-image: url('/assets/icons/phone.svg');
+    background-image: url('/js-developer-portfolio/assets/icons/phone.svg');
     fill: #FFFFFF;
 }
 
 .info .email::before {
-    background-image: url('/assets/icons/mail.svg');
+    background-image: url('/js-developer-portfolio/assets/icons/mail.svg');
     fill: #fff;
 }
 
